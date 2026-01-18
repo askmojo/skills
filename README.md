@@ -37,7 +37,31 @@ We believe AI should amplify your expertise, not require you to become a prompt 
 
 ## How to Use
 
-### For ChatGPT / Claude Users
+### Option 1: AskMojo (Recommended)
+
+**Best experience with [askmojo.ai](https://askmojo.ai):**
+
+1. **Import skills** - Add any skill from this library to your AskMojo workspace
+2. **Set up context once:**
+   - Your business goals & priorities
+   - Target audience profiles
+   - Brand voice & tone guidelines
+   - Past examples & preferences
+3. **Run with one command** - `/skill-name [input]`
+4. **Context auto-loads** - Every skill uses your context automatically
+
+**Why AskMojo is better:**
+- ✅ **Setup once, use everywhere** - Context shared across all skills
+- ✅ **Integrated APIs** - Built-in web research, image generation, data analysis
+- ✅ **No repetition** - Never re-explain your business context
+- ✅ **Learns from edits** - Outputs improve based on your feedback
+- ✅ **Tool orchestration** - Skills can call other skills and APIs
+
+[Start free at askmojo.ai →](https://askmojo.ai)
+
+### Option 2: ChatGPT / Claude (Manual)
+
+**If you prefer using ChatGPT/Claude directly:**
 
 Each skill contains:
 - Clear purpose and use cases
@@ -50,11 +74,17 @@ Each skill contains:
 1. Browse skills below
 2. Open the skill's `SKILL.md` file
 3. Read the context requirements
-4. Provide your context to ChatGPT/Claude
+4. Provide your context to ChatGPT/Claude (copy-paste each time)
 5. Follow the skill instructions
-6. Get consistent, reusable outputs
+6. Get outputs (quality depends on context you provide)
 
-**Note:** Without a persistent context system, you'll need to re-provide context each time. Consider building or using a system like [AskMojo](https://askmojo.com) for automated context management.
+**Limitations:**
+- ❌ Must re-provide context for every chat
+- ❌ No persistent memory across skills
+- ❌ Manual API integrations (research, images, data)
+- ❌ No learning from your edits
+
+**This works, but it's slower.** If you use skills regularly, consider [askmojo.ai](https://askmojo.ai) for persistent context.
 
 ---
 
