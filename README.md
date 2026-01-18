@@ -119,7 +119,7 @@ We prioritize prompts with:
 
 ## Why Open Source?
 
-We're building [AskMojo](https://askmojo.com) - a platform for AI-powered business workflows with persistent context management.
+We're building [AskMojo](https://askmojo.ai) - a platform for AI-powered business workflows with persistent context management.
 
 These open-source skills demonstrate our approach: **context curation over prompt engineering**.
 
@@ -128,7 +128,7 @@ By sharing these skills, we help people:
 - Build better AI workflows
 - Understand the value of persistent context
 
-If you want automated context management and skill orchestration, check out [AskMojo](https://askmojo.com).
+If you want automated context management and skill orchestration, check out [AskMojo](https://askmojo.ai).
 
 ---
 
