@@ -61,81 +61,97 @@ We believe AI should amplify your expertise, not require you to become a prompt 
 
 [Start free at askmojo.ai →](https://askmojo.ai)
 
-### Option 2: Claude.ai or ChatGPT (Manual)
+### Option 2: Import Into Claude (Native Skill Support)
 
-**If you prefer using Claude/ChatGPT directly:**
+**Claude has native skill support** - you can import skills directly from this repo.
 
-#### For Claude.ai Users
+**How to import a skill:**
 
-**Best Method: Claude Projects**
+1. **Download the skill**
+   - Click into the skill folder you want (e.g., `growth-consultant/`)
+   - Click "Code" → "Download ZIP" (or download just that folder)
+   - Make sure the ZIP contains a `SKILL.md` file at its root
 
-1. Go to **claude.ai/projects** → Click **"+ New Project"**
-2. Name it: **"[Skill Name] Assistant"**
-3. Click **"Set project instructions"** (right sidebar)
-4. Paste the **"Process"** section from the skill's SKILL.md
-5. Add your context (business goals, audience, voice, constraints)
-6. Upload reference files if needed (20 files max, 30MB each)
-7. Start chatting - Claude uses instructions automatically
+2. **Upload to Claude**
+   - Go to claude.ai and sign in
+   - Click your name → **Settings** → **Capabilities**
+   - Scroll to the **Skills** section
+   - Click **Upload skill**, choose the ZIP file
+   - Toggle the skill **On** in the skills list
 
-**Alternative: Claude Memory** (Pro/Max users)
-- Settings → Capabilities → Enable "Generate memory from chat history"
-- Tell Claude once: "Remember: [your context]. When I say '[skill name]', follow: [Process steps]"
-- Use anytime: "[skill name] [your input]"
+3. **Use the skill**
+   - Start a new chat
+   - Describe your task using words that match the skill's description
+   - Example: "Analyze my competitor landscape using growth consultant"
+   - Claude will automatically recognize and apply the skill
+   - You'll see which skill Claude is using during the conversation
 
-**Limits:** 200K token context window (≈150,000 words), 20 files per chat
+**No manual setup needed** - Claude handles context management automatically.
+
+[📖 Official Claude Skills Documentation](https://support.claude.com/en/articles/12512180-using-skills-in-claude)
 
 ---
 
-#### For ChatGPT Users
+### Option 3: Reuse In ChatGPT (Manual Instructions)
 
-**Best Method: Custom GPTs** (Plus/Pro/Team/Enterprise)
+**ChatGPT doesn't support native skill imports**, but you can reuse the skill's instructions manually.
 
-1. Go to **chatgpt.com/gpts/editor** → Click **"+ Create"**
-2. **Configure tab:**
-   - Name: **"[Skill Name] Assistant"**
-   - Instructions: Paste **"Process"** section from SKILL.md
-   - Knowledge: Upload reference files (20 max, 2M tokens each)
-   - Capabilities: Enable relevant tools (Web Search, Code Interpreter, etc.)
-3. **Publish** → Choose **"Only me"**
-4. Access from **"My GPTs"** - use anytime
+#### Method A: Custom Instructions (All Users)
 
-**Alternative: Custom Instructions + Memory** (All users)
-- Settings → Personalization → "Custom Instructions" (1,500 chars per field)
-- Section 1: Your role, goals, constraints
-- Section 2: "When I use [skill name], follow: [key steps]"
-- Enable Memory: "Reference saved memories" + "Reference chat history"
+**Best for:** Applying one skill globally to all your chats
 
-**Limits:** 32K token context window, 1,500 chars per Custom Instructions field
+1. Open ChatGPT → **Settings** → **Custom instructions**
+2. From the skill's `SKILL.md` file:
+   - Copy the description and process into **"How would you like ChatGPT to respond?"**
+   - Optionally copy context requirements into **"What should ChatGPT know about you?"**
+3. **Save** - Now all chats follow that skill until you change it
+
+**Limits:** 1,500 characters per field
+
+---
+
+#### Method B: Custom GPT (Plus/Pro/Team/Enterprise)
+
+**Best for:** Creating a dedicated version of one skill
+
+1. In ChatGPT, click **Explore GPTs** → **Create**
+2. Set up the GPT:
+   - **Name:** Use the skill's name (e.g., "Growth Consultant")
+   - **Description:** Copy from the skill's description
+   - **Instructions:** Paste the entire `SKILL.md` content
+   - **Knowledge:** Upload any reference files if needed
+3. **Save** your Custom GPT
+4. **Use it:** Select that GPT from your list whenever you need it
+
+**Benefit:** Dedicated version per skill, doesn't affect other chats
+
+[📖 ChatGPT Custom Instructions Guide](https://www.datacamp.com/tutorial/how-to-use-chat-gpt-custom-instructions)
 
 ---
 
 #### Comparison Table
 
-| Method | Setup Time | Reusability | Best For |
-|--------|-----------|-------------|----------|
-| **AskMojo** | 10 min once | ⭐⭐⭐ Perfect | Regular use, multiple skills, integrated APIs |
-| **Claude Projects** | 5 min/skill | ⭐⭐ Good | Organized workflows, large context |
-| **Custom GPTs** | 10 min/skill | ⭐⭐ Good | Specialized tasks, file knowledge |
-| **Custom Instructions** | 5 min once | ⭐ Limited | Simple universal preferences |
-| **Memory** | First use | ⭐ Variable | Automatic learning over time |
-| **Manual (paste each time)** | Every chat | ❌ None | One-off tasks only |
+| Method | Setup Time | Reusability | Context Memory | Best For |
+|--------|-----------|-------------|----------------|----------|
+| **AskMojo** | 10 min once | ⭐⭐⭐ Perfect | Persistent across all skills | Regular use, multiple skills, integrated APIs |
+| **Claude Skills** | 2 min/skill | ⭐⭐⭐ Perfect | Per skill, auto-managed | Native Claude users, clean skill isolation |
+| **Custom GPTs** | 10 min/skill | ⭐⭐ Good | Per GPT only | Dedicated ChatGPT versions per skill |
+| **Custom Instructions** | 5 min once | ⭐ Limited | Global, single skill | Applying one skill to all ChatGPT chats |
 
 ---
 
-#### Limitations of Manual Approach
+#### Why AskMojo vs Claude/ChatGPT?
 
-**What you'll deal with:**
-- ❌ Must re-provide context for every new chat (or set up per skill)
-- ❌ No persistent memory across different skills
-- ❌ Manual API integrations (web research, images, data analysis)
-- ❌ No automatic learning from your edits
-- ❌ Context window limits (Claude: 200K tokens, ChatGPT: 32K tokens)
+**Claude Skills & ChatGPT work great** for individual skills. AskMojo adds:
 
-**This works, but requires more setup.** If you use skills regularly, consider [askmojo.ai](https://askmojo.ai) for:
-- Persistent context across ALL skills (setup once)
-- Integrated APIs (research, image generation, data analysis)
-- Automatic learning and improvement
-- Unlimited context (no token limits per skill)
+✅ **Cross-skill context** - Set up your business context once, all skills use it
+✅ **Integrated APIs** - Built-in web research, image generation, data analysis
+✅ **Skill orchestration** - Skills can call other skills automatically
+✅ **Learning system** - Improves outputs based on your edits over time
+✅ **No setup per skill** - Import once, works with your existing context
+
+**Use Claude/ChatGPT if:** You only need 1-2 skills occasionally
+**Use AskMojo if:** You use multiple skills regularly and want shared context
 
 ---
 
