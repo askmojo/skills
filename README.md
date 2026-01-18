@@ -133,7 +133,7 @@ We believe AI should amplify your expertise, not require you to become a prompt 
 
 | Method | Setup Time | Reusability | Context Memory | Best For |
 |--------|-----------|-------------|----------------|----------|
-| **AskMojo** | 10 min once | ⭐⭐⭐ Perfect | Persistent across all skills | Regular use, multiple skills, integrated APIs |
+| **AskMojo** | 1 min once | ⭐⭐⭐ Perfect | Persistent across all skills | Regular use, multiple skills, integrated APIs |
 | **Claude Skills** | 2 min/skill | ⭐⭐⭐ Perfect | Per skill, auto-managed | Native Claude users, clean skill isolation |
 | **Custom GPTs** | 10 min/skill | ⭐⭐ Good | Per GPT only | Dedicated ChatGPT versions per skill |
 | **Custom Instructions** | 5 min once | ⭐ Limited | Global, single skill | Applying one skill to all ChatGPT chats |
