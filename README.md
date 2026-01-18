@@ -134,7 +134,7 @@ If you want automated context management and skill orchestration, check out [Ask
 
 ## About
 
-Created by [@cedric-petton](https://linkedin.com/in/cedric-petton) - Building AI systems that amplify human expertise.
+Created by [@erwanpetton](https://linkedin.com/in/erwanpetton) - Building AI systems that amplify human expertise.
 
 **Philosophy**: AI should handle the mechanical work so humans can focus on what's uniquely human - judgment, taste, context, relationships, and meaning-making.
 
