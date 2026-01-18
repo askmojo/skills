@@ -438,7 +438,7 @@ This skill can be adapted to work with your tools:
 
 **Input:**
 ```
-Company: AskMojo
+Company: ContextFlow
 Industry: SaaS (AI productivity tools)
 Current focus: AI workflow platform for knowledge workers using persistent context management. Freemium model with $20/month Pro tier. Targeting solopreneurs and small teams. Current growth tactics: content marketing, GitHub open source.
 Known challenges: Crowded AI tools market, high CAC for paid conversions, need to differentiate from ChatGPT/Claude.
@@ -519,7 +519,7 @@ Your key differentiator is persistent context, but capturing context is manual. 
 **Implementation Plan:**
 
 **First Next Step:**
-Spec out MVP extension features this week - focus on: (1) one-click save to AskMojo, (2) auto-capture page context, (3) quick skill invocation. Ship within 30 days.
+Spec out MVP extension features this week - focus on: (1) one-click save to workspace, (2) auto-capture page context, (3) quick skill invocation. Ship within 30 days.
 
 **Timeline:**
 - Week 1-2: Extension MVP development + internal testing
