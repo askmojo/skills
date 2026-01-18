@@ -47,7 +47,9 @@ We believe AI should amplify your expertise, not require you to become a prompt 
    - Target audience profiles
    - Brand voice & tone guidelines
    - Past examples & preferences
-3. **Run with one command** - `/skill-name [input]`
+3. **Use skills naturally:**
+   - Select skill from dropdown in chat input, OR
+   - Just ask: "Use [skill-name] for: [your input]"
 4. **Context auto-loads** - Every skill uses your context automatically
 
 **Why AskMojo is better:**
