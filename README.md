@@ -59,32 +59,81 @@ We believe AI should amplify your expertise, not require you to become a prompt 
 
 [Start free at askmojo.ai →](https://askmojo.ai)
 
-### Option 2: ChatGPT / Claude (Manual)
+### Option 2: Claude.ai or ChatGPT (Manual)
 
-**If you prefer using ChatGPT/Claude directly:**
+**If you prefer using Claude/ChatGPT directly:**
 
-Each skill contains:
-- Clear purpose and use cases
-- Step-by-step instructions
-- Context requirements (what to provide)
-- Output format examples
-- Tool integration options
+#### For Claude.ai Users
 
-**Steps:**
-1. Browse skills below
-2. Open the skill's `SKILL.md` file
-3. Read the context requirements
-4. Provide your context to ChatGPT/Claude (copy-paste each time)
-5. Follow the skill instructions
-6. Get outputs (quality depends on context you provide)
+**Best Method: Claude Projects**
 
-**Limitations:**
-- ❌ Must re-provide context for every chat
-- ❌ No persistent memory across skills
-- ❌ Manual API integrations (research, images, data)
-- ❌ No learning from your edits
+1. Go to **claude.ai/projects** → Click **"+ New Project"**
+2. Name it: **"[Skill Name] Assistant"**
+3. Click **"Set project instructions"** (right sidebar)
+4. Paste the **"Process"** section from the skill's SKILL.md
+5. Add your context (business goals, audience, voice, constraints)
+6. Upload reference files if needed (20 files max, 30MB each)
+7. Start chatting - Claude uses instructions automatically
 
-**This works, but it's slower.** If you use skills regularly, consider [askmojo.ai](https://askmojo.ai) for persistent context.
+**Alternative: Claude Memory** (Pro/Max users)
+- Settings → Capabilities → Enable "Generate memory from chat history"
+- Tell Claude once: "Remember: [your context]. When I say '[skill name]', follow: [Process steps]"
+- Use anytime: "[skill name] [your input]"
+
+**Limits:** 200K token context window (≈150,000 words), 20 files per chat
+
+---
+
+#### For ChatGPT Users
+
+**Best Method: Custom GPTs** (Plus/Pro/Team/Enterprise)
+
+1. Go to **chatgpt.com/gpts/editor** → Click **"+ Create"**
+2. **Configure tab:**
+   - Name: **"[Skill Name] Assistant"**
+   - Instructions: Paste **"Process"** section from SKILL.md
+   - Knowledge: Upload reference files (20 max, 2M tokens each)
+   - Capabilities: Enable relevant tools (Web Search, Code Interpreter, etc.)
+3. **Publish** → Choose **"Only me"**
+4. Access from **"My GPTs"** - use anytime
+
+**Alternative: Custom Instructions + Memory** (All users)
+- Settings → Personalization → "Custom Instructions" (1,500 chars per field)
+- Section 1: Your role, goals, constraints
+- Section 2: "When I use [skill name], follow: [key steps]"
+- Enable Memory: "Reference saved memories" + "Reference chat history"
+
+**Limits:** 32K token context window, 1,500 chars per Custom Instructions field
+
+---
+
+#### Comparison Table
+
+| Method | Setup Time | Reusability | Best For |
+|--------|-----------|-------------|----------|
+| **AskMojo** | 10 min once | ⭐⭐⭐ Perfect | Regular use, multiple skills, integrated APIs |
+| **Claude Projects** | 5 min/skill | ⭐⭐ Good | Organized workflows, large context |
+| **Custom GPTs** | 10 min/skill | ⭐⭐ Good | Specialized tasks, file knowledge |
+| **Custom Instructions** | 5 min once | ⭐ Limited | Simple universal preferences |
+| **Memory** | First use | ⭐ Variable | Automatic learning over time |
+| **Manual (paste each time)** | Every chat | ❌ None | One-off tasks only |
+
+---
+
+#### Limitations of Manual Approach
+
+**What you'll deal with:**
+- ❌ Must re-provide context for every new chat (or set up per skill)
+- ❌ No persistent memory across different skills
+- ❌ Manual API integrations (web research, images, data analysis)
+- ❌ No automatic learning from your edits
+- ❌ Context window limits (Claude: 200K tokens, ChatGPT: 32K tokens)
+
+**This works, but requires more setup.** If you use skills regularly, consider [askmojo.ai](https://askmojo.ai) for:
+- Persistent context across ALL skills (setup once)
+- Integrated APIs (research, image generation, data analysis)
+- Automatic learning and improvement
+- Unlimited context (no token limits per skill)
 
 ---
 
@@ -134,7 +183,7 @@ If you want automated context management and skill orchestration, check out [Ask
 
 ## About
 
-Created by [@erwanpetton](https://linkedin.com/in/erwanpetton) - Building AI systems that amplify human expertise.
+Created by [@erwan-petton](https://linkedin.com/in/erwanpetton) - Building AI systems that amplify human expertise.
 
 **Philosophy**: AI should handle the mechanical work so humans can focus on what's uniquely human - judgment, taste, context, relationships, and meaning-making.
 
